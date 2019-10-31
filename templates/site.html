@@ -1,0 +1,24 @@
+{{template "header"}}
+<div class="container text-center">
+    <h1>Stop Times</h1>
+    <table>
+        <thead>
+            <tr>
+                100010
+            </tr>
+            <tr>
+                <th>#</th><th>MON</th><th>#</th><th>TUE</th><th>#</th><th>WED</th><th>#</th><th>THU</th><th>#</th><th>FRI</th><th>#</th><th>SAT</th><th>#</th><th>SUN</th><th>#</th><th>EXC</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range .}}
+            <tr>
+                <td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td><td>{{.}}</td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+        {{range .}}<tr><td>{{.}}</td></tr>{{end}}</table>`
+    <ul class="list-unstyled">{{range $key, $value := .}}<li>{{$key}} = {{value}}</li>{{end}}</ul>
+</div>
+{{template "footer"}}
